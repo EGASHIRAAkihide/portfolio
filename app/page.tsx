@@ -1,10 +1,19 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-export default function Home() {
+export default function Page() {
   return (
-    <div>
-      HOME<br />
-      <Link href="/login">Login</Link>
-    </div>
+    <main>
+      <ul>
+        <li>
+          <Link href="/login">
+            login
+          </Link>
+        </li>
+        <li>
+          <Link href="/dashboard">
+          dashboard</Link>
+        </li>
+      </ul>
+    </main>
   );
 }
